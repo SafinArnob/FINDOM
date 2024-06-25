@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 //import 'homePage.dart'; // Corrected import for homePage
-import 'loginPage.dart';
+import 'homePage.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LoginPage(), // Corrected class name to HomePage
+          builder: (context) => RootPage(), // Corrected class name to HomePage
         ),
       );
     });
